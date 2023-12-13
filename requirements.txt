@@ -1,0 +1,26 @@
+For this project, I have set up a Docker file as well as a virtual environment 
+under the directory name 'MLScraper'
+
+The main requirements needed for this project, along with their descriptions, are as follows:
+
+1.) Requests - A Python library used for making HTTP requests to web servers. 
+It's the standard and easiest way to send HTTP requests in Python. Since Selenium
+is being used, we will see if this is needed. 
+
+2.) Beautiful Soup - A Python library for parsing HTML and XML documents. 
+It does this by creating parse trees that are helpful for extracting data easily. 
+Since Selenium is being used, we will see if this is needed. 
+
+3.) Pandas - A data manipulation and analysis library. 
+It provides data structures and tools to quickly and efficiently manipulate large datasets.
+
+4.) python-dotenv - A Python library for handling sensitive information that is located in the 
+.env file, which will not be committed to Github. 
+
+5.) Selenium - Decided to add this in because of the structure of the ML website, as it uses
+an external Javascript app, the needed information is not in the HTML of the webpage. 
+
+6.) Chromedriver for Selenium. This has been added in order to give Selenium the functionality 
+that it needs in order to scrape ML. 
+
+Possibly: A tool for automatically running at regular intervals.

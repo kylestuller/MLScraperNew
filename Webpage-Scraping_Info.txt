@@ -1,0 +1,69 @@
+This document will be used for research purposes, in order to hand this information to ChatGPT
+so that the code can be written. 
+
+1. Target Website Details
+URLs to Scrape: 
+Login page - https://identity.generac.com/Account/login?returnURL=~/grants
+    The name of the login form is Local Login
+    There are two values that will be used, for the 'Username' (ML_Site_Username key) 
+    and 'Password' (ML_Site_Password key) fields. 
+
+Application access page - https://identity.generac.com/grants
+    This page will pop up sometimes, not all the time, and the 'Go to Web Site' button
+    under Fleet Management Web Application will need to be pressed. 
+
+Main page - https://fleet.mobilelinkgen.com/generators
+    The page is what propogates once login/application access has been completed. From here, the 'Subscriptions' 
+    tab will need to be clicked, which is located on the left sidebar menu.
+
+Subscriptions page - https://fleet.mobilelinkgen.com/subscriptions
+
+    Here is where we will use each generator serial number in order to update the 
+    relevant contact in Bigin. Each contact will need to be accessed by checking the
+    following boxes under 'SUBSCRIPTION STATUS': 'Active', 'Expired in the Past 30 Days'(<label data-v-49213a35="" for="`subscriptionStatus${item.value}`" data-test-hook="checkbox-Expired in the Past 30 Days" class="custom-control-label">Expired in the Past 30 Days</label>),
+    'Expired Over 30 Days'.
+
+    From this list, the 'Serial Number' and the 'Expiration Date' will be present in the list of 
+    generators. There is also pagination here in order to view all of the generators, the button is:
+    '<button role="menuitem" type="button" tabindex="-1" aria-label="Go to next page" class="page-link">›</button>'
+
+
+Data Points: We need to scrape for the expiration date under 'Expires' with the date being in the mm/dd/yyyy format. 
+This data point will be based on the serial number.  
+
+HTML Structure: Information about the HTML structure of the target pages that will help identify 
+where the data is located (e.g., specific ids or class names of HTML elements).
+
+Login Requirements: If the website requires authentication, general details 
+about the login process (but not your actual credentials).
+
+
+2. Data Format and Processing Requirements
+Desired Format: How you want the scraped data to be structured.
+
+Data Cleaning: Any specific data cleaning or transformation steps needed (e.g., removing HTML tags, converting strings to numbers).
+
+Temporary Storage: If the data needs to be stored temporarily before being sent to Bigin CRM (e.g., in a file or database).
+
+
+3. Bigin CRM Integration Details
+API Endpoints: Which endpoints of the Bigin CRM API the data should be sent to.
+
+Data Structure for Bigin CRM: The format and structure in which Bigin CRM expects the data 
+(to ensure compatibility with its API).
+
+Authentication Method: General information about how authentication is handled with Bigin CRM's API 
+(e.g., API keys, OAuth tokens), without sharing actual credentials.
+
+
+4. Frequency and Volume of Scraping
+Scraping Schedule: How often the scraping should occur (e.g., hourly, daily, weekly).
+
+Amount of Data: The expected volume of data to be scraped in each session.
+
+
+5. Error Handling and Logging Preferences
+Error Scenarios: Potential errors or issues that might occur during scraping (e.g., changes in website layout, rate limits) 
+and how you'd like the script to handle them.
+
+Logging Requirements: Any specific requirements for logging (e.g., log to a file, console output).

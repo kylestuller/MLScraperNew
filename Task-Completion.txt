@@ -1,0 +1,31 @@
+1.) Installed dependencies: Requests, BeautifulSoup4, Pandas
+
+2.) Created a virtual environment named 'MLScraper-venv'. 
+
+3.) Created a source ('src') folder with 'MLScraper.py' in there. 
+
+4.) Initiated Git with 'Git init'. 
+
+5.) Created a task completion file named 'Task-Completion.txt' in order to keep track of things. 
+
+6.) Created a Github repository with the name 'MLScraper' under KyleStuller.
+
+7.) Cloned the repository on my local device. 
+
+8.) Since we will be dealing with sensitive information, I created a .env file that will
+have all of these keys, passwords, and sensitive information. 
+
+9.) Renamed the root directory to: /Users/kylestuller/Desktop/Programming_Scripts/MLScraper
+
+10.) Installed the 'python-dotenv file that will manage sensitive information like API credentials,
+usernames, and passwords. 
+
+11.) Created a .env file, which will contain all of the sensitive information mentioned in #10. 
+This file will not contain any hard-coded info, and it will be a part of the .gitignore file. 
+
+12.) Created the 'Webpage-Scraping_Info.txt' file in order to keep up with the information
+from the ML site and from Bigin. This is where we will have all non-sensitive information. 
+
+13.) Installed Selenium since the ML website is so complex. 
+
+14.) Installed Chromedriver and placed it into the /usr/local/bin folder.
