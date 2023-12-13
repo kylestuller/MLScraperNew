@@ -16,3 +16,4 @@ Step 3: The script will organize the data into the format that Bigin needs. The 
 Step 4: This entire process above can be automated and set to run at regular intervals, we would have to use a task scheduler in order to make this happen. 
 We need to make sure that the script has robust error handling and reporting in case someone can't be updated, network errors, login failures, or changes
 to the Mobile Link's website. 
+# MLScraperNew
