@@ -17,3 +17,4 @@ Step 4: This entire process above can be automated and set to run at regular int
 We need to make sure that the script has robust error handling and reporting in case someone can't be updated, network errors, login failures, or changes
 to the Mobile Link's website. 
 # MLScraperNew
+# MLScraperNew
